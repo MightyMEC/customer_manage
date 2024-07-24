@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #ok {
+            border: 2px solid #ccc;
+            text-align: left;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        #kk {
+            font-size: larger;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .ok {
+            height: 40px;
+            width: 100%;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 0 10px;
+            color: #333;
+        }
+        .ok:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ff6f61;
+        }
+        .ok[type="submit"] {
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+        }
+        .ok[type="submit"]:hover {
+            background-color: #e55a4f;
+        }
+        h2 a {
+            text-decoration: none;
+            color: palegreen;
+        }
+        h2 a:hover {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: #fff; color: #333; padding: 20px; border-radius: 10px;">Please Login</h1>
+    <fieldset id="ok">
+        <form action="Login" method="post">
+            <div class="form-group">
+                <label for="login_id" id="kk">Login ID</label>
+                <input class="ok" type="email" id="login_id" name="login_id" required placeholder="Enter your login ID">
+            </div>
+            <div class="form-group">
+                <label for="password" id="kk">Password</label>
+                <input class="ok" type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <input class="ok" type="submit" value="Submit">
+            </div>
+            <h2><a href="Register.html">Register</a></h2>
+        </form>
+    </fieldset>
+</body>
+</html>

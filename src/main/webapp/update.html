@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #form-container {
+            border: 2px solid #5a9;
+            text-align: left;
+            background-color: #4b8;
+            color: #fff;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 700px;
+            height: auto; /* Adjust height according to content */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 24px; /* Decreased font size */
+        }
+        h2 a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 18px; /* Decreased font size */
+            color: #ff6600;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            height: 35px; /* Decreased height */
+            border: 2px solid #999;
+            border-radius: 5px;
+            font-size: 16px; /* Decreased font size */
+            padding: 0 10px;
+            color: #333;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            outline: none;
+            box-shadow: 0 0 5px #ff6600;
+        }
+        .form-group input[type="submit"] {
+            background-color: #ff6600;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #cc5200;
+        }
+        .full-width {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update your Profile</h1>
+    <fieldset id="form-container">
+        <form action="update" method="post">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" name="id" id="id" required placeholder="Enter your ID">
+            </div>
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" required placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input type="text" name="street" id="street" required placeholder="Enter your street">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" required placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required placeholder="Enter your city">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" required placeholder="Enter your state">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update">
+            </div>
+        </form>
+        <h2><a href="Login.html">Login</a></h2>
+        <form action="all">
+            <div class="form-group">
+                <input type="submit" value="Fetch all employees data">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search User</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: paleturquoise;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.update-button, .delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.update-button:hover {
+    background-color: #0069d9;
+}
+
+.delete-button {
+    background-color: #FF4136;
+    color: white;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: #e0362a;
+}
+
+
+    </style>
+</head>
+<body style="">
+	    
+
+    <h1>Welcome to Employee Management System <br>Search User by ID or Email</h1>
+    <form action="search" >
+        <label for="searchTerm">ID or Email:</label>
+        <input type="text" id="searchTerm" name="employeeId" required>
+        <button type="submit">Search</button>
+    </form>
+    <form>
+		
+        <h2><a href="delete.html" class="delete-button">Delete</a></h2>
+        <h2><a href="update.html" class="update-button">Update</a></h2>
+	</form>
+</body>
+</html>
